@@ -1,0 +1,103 @@
+:root {
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+/* My rules */
+
+div {
+    display: flex;
+}
+
+.parent {
+    display: flex;
+    font-size: 12pt;
+}
+
+/* Banner */
+
+.div1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+}
+
+.bg {
+    background: url(hameen-reynolds-zWFa7mlQAYk-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    margin-top: 160px;
+    background-color: hwb(0 0% 100% / 0.4);
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 80px;
+    margin: 12px 0;
+}
+
+.credits {
+    margin-top: auto;
+    justify-content: center;
+    font-size: 0.5rem;
+}
+
+/* Form */
+
+.div2 {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+}
+
+.div2 div {
+    border: solid 1px red;
+}
+
+.div2 .tittles {
+    flex-direction: column;
+}
