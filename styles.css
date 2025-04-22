@@ -36,6 +36,10 @@ img {
 
 /* My rules */
 
+body {
+    background-color: #F8F9FA;
+}
+
 div {
     display: flex;
 }
@@ -74,14 +78,15 @@ div {
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
-    max-width: 80px;
-    margin: 12px 0;
+    max-width: 100px;
+    margin: 10px 0;
 }
 
 .credits {
     margin-top: auto;
     justify-content: center;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    background-color: hwb(0 0% 100% / 0.4);
 }
 
 /* Form */
@@ -90,14 +95,98 @@ div {
     display: flex;
     flex: 2;
     flex-direction: column;
-    justify-content: center;
-    background-color: gray;
-}
-
-.div2 div {
-    border: solid 1px red;
 }
 
 .div2 .tittles {
+    padding: 12px 22px;
+    flex: 1;
     flex-direction: column;
+}
+
+.tittles p {
+    font-size: large;
+    font-weight: 600;
+}
+
+/* Form */
+.div2 .form {
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 16px var(--shadow-color);
+
+}
+
+form {
+    display: block;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+fieldset {
+    border: 0;
+    padding: 1em 0 0 0;
+    margin: 0;
+    min-width: 0;
+}
+
+legend {
+    font-size: large;
+    font-weight: 600;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0 3rem;
+}
+
+.input-grid > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.1em;
+    font-size: x-small;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;}
+
+.div2 {
+    background-color: #FFFFFF;
+    padding: 12px 22px;
+    flex: 1;
+}
+
+.div2 .submit {
+    padding: 12px 22px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.submit button {
+    --button_radius: 0.25em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #596D48;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 200px;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    box-shadow: 6px 6px 16px var(--shadow-color);
+}
+
+.submit .login {
+    padding: 12px 22px;
 }
