@@ -75,7 +75,7 @@ div {
 }
 
 .logo {
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
     justify-content: center;
     align-items: center;
     max-width: 100px;
@@ -95,12 +95,12 @@ div {
     display: flex;
     flex: 2;
     flex-direction: column;
-}
+    }
 
 .div2 .tittles {
-    padding: 12px 22px;
     flex: 1;
     flex-direction: column;
+    margin-top: 120px;
 }
 
 .tittles p {
@@ -108,27 +108,35 @@ div {
     font-weight: 600;
 }
 
-/* Form */
-.div2 .form {
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 6px 6px 16px var(--shadow-color);
-
+.tittles span {
+    font-style: italic;
 }
 
-form {
+.div2 .action {
+    margin-top: 22px;
+}
+
+/* Form */
+.div2 {
+    background-color: #FFFFFF;
+    padding: 12px 22px;
+    flex: 1;
+}
+
+.div2 form {
     display: block;
     align-items: center;
     margin-bottom: 1em;
 }
 
-fieldset {
+.div2 fieldset {
     border: 0;
     padding: 1em 0 0 0;
     margin: 0;
     min-width: 0;
 }
 
-legend {
+.div2 legend {
     font-size: large;
     font-weight: 600;
 }
@@ -145,7 +153,7 @@ legend {
     flex-direction: column;
 }
 
-label {
+.div2 label {
     display: block;
     margin-bottom: 0.1em;
     font-size: x-small;
@@ -153,19 +161,28 @@ label {
     text-transform: uppercase;
 }
 
-form input {
+.div2 input {
     display: block;
     width: 100%;
-    margin-bottom: 1em;}
-
-.div2 {
-    background-color: #FFFFFF;
-    padding: 12px 22px;
-    flex: 1;
+    margin-bottom: 1em;
 }
 
+.div2 input:invalid {
+    border: solid red 1px;
+    border-radius: 3px;
+}
+
+.div2 input:focus {
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    border: solid blue 1px;
+    box-shadow: 6px 6px 16px var(--shadow-color);
+    border-radius: 3px;
+}
+
+/* Button */
+
 .div2 .submit {
-    padding: 12px 22px;
+    margin-top: 12px;
     flex: 1;
     flex-direction: column;
 }
@@ -178,7 +195,7 @@ form input {
     color: white;
     width: 200px;
     padding: 12px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -188,5 +205,6 @@ form input {
 }
 
 .submit .login {
-    padding: 12px 22px;
+    margin-top: 12px;
+    gap: 10px;
 }
